@@ -3,7 +3,7 @@ const fs = require('fs');
 
 const port = 5000;
 
-const server = http.createServer((req, res) => {
+const server = http.createServer((req, res) => { //fhgjkk
   fs.readFile('index.html', (err, data) => {
     if (err) {
       res.writeHead(404, { 'Content-Type': 'text/html' });
